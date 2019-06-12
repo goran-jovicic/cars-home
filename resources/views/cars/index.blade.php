@@ -1,0 +1,9 @@
+<h4>
+    All cars models :
+</h4>
+<ul>
+    @foreach ($cars as $car)
+        <p> {{ $car->producer }} </p>
+        <li> {{ $car->title }} </li>
+    @endforeach
+</ul>
