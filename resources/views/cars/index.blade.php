@@ -4,6 +4,6 @@
 <ul>
     @foreach ($cars as $car)
         <p> {{ $car->producer }} </p>
-        <li> {{ $car->title }} </li>
+        <li> <a href="/cars/{{ $car->id }}">{{ $car->title }}</a> </li>
     @endforeach
 </ul>
